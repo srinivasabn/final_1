@@ -43,15 +43,66 @@ git push --tags
 git tag -d v1.0
 git push origin -d v1.0
 
+6.
+mvn archetype:generate
+cd sample_app
+mvn package
+cd target { snap file }
+or { mvn clean 
+mvn package }
+{mvn site
+target-site-index.html}
+java -cp sampl_app snap.jar com.bnmit.App
+
 7.
-old bits, batch command echo"hiiiiiiiii"
+create a java file in git(hii)
+add git link,credentials
+build steps- javac BankService.java
+java BankService
+post build-artifacts
+Files to archive-*.class
 build, show output
 
 8.
 old bits,git url,credential,main
+poll scm-5 stars
 command javac BankService.java
 java BankService
 build
 change code
 wait for build
 
+9.
+open jenkins
+pipeline
+code 
+pipeline {
+    agent any // Run on any available Jenkins agent
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Compiling the application...'
+                // sh './build.sh' (for Linux) or bat 'build.bat' (for Windows)
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Running unit tests...'
+                // sh 'mvn test'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying to production...'
+            }
+        }
+    }
+}
+build,op
+
+10.
+download pipeline stageview
+add error 
+build,op
+fix error
+build,op
