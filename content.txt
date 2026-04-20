@@ -1,1 +1,57 @@
+1.
+git init
+ls -a
+git config --global user.name "sri"
+git config --global user.email sri@email.com
+file create,add,commit,log
+modify file ,status,add,commit ,log
+
+2.
+goto feature branch
+create file,add,commit
+move to main branch
+modify same file,add,commit
+git merge feature--conflict
+git mergetool
+git log --oneline
+git branch -d feature
+
+3.
+create repo 
+clone in bash
+create file,add,commit
+git push -u origin main
+create file in repo
+git pull origin main
+
+4.
+same upto 4 steps above
+move to feature branch
+moodify same file,add,commit,push feature
+pull reguest
+git branch -d feature
+git push origin --delete feature
+
+5.
+clone repo
+git tag v1.0
+git tag -a v1.2 -m "hii"
+git tag
+git show v1.2
+git push origin v1.0
+git push --tags
+git tag -d v1.0
+git push origin -d v1.0
+
+7.
+old bits, batch command echo"hiiiiiiiii"
+build, show output
+
+8.
+old bits,git url,credential,main
+command javac BankService.java
+java BankService
+build
+change code
+wait for build
 
